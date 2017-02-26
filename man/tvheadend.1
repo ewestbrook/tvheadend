@@ -197,6 +197,12 @@ should be launched with the '-u' argument. Also notice that XMLTV will read/
 store cache and configuration from the same user home directory.
 .PP
 If daemonizing, tvheadend will writes its pid in /var/run/tvheadend.pid
+.SH "EXIT STATUS"
+.PP
+If Tvheadend exits with a status code other than zero or one, the following is indicated.
+.TP
+\fB78\fR
+Tvheadend was unable to obtain a configuration lock, perhaps due to another running instance of Tvheadend.
 .SH "AUTHOR"
 .B Tvheadend
 and this man page is maintained by the Tvheadend team. Please see the 
